@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nao-websocket-bridge-protocol"
-version = "0.1.0"
+version = "1.0.0"
 description = "Shared message contract for the NAO WebSocket bridge."
 readme = "README.md"
 requires-python = ">=3.10"

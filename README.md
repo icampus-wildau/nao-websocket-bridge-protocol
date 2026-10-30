@@ -8,6 +8,11 @@ The [bridge install](https://github.com/icampus-wildau/nao-websocket-bridge#inst
 uv add nao-websocket-bridge-protocol
 ```
 
+Run `uv add` inside an existing Python project, or install into an activated
+Python 3.10+ environment on Linux or Windows with
+`python -m pip install nao-websocket-bridge-protocol`. Python 2.7 on the NAO
+uses the copied source, not this Python 3 package installation.
+
 ## Messages
 
 The first frame is text JSON:

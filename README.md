@@ -1,6 +1,6 @@
 # nao-websocket-bridge-protocol
 
-WebSocket message contract for the microphone bridge between a NAO and a laptop. No third-party imports and no type annotations, so the same file loads on the robot's Python 2.7 and as this package on Python 3.10+.
+WebSocket message contract for the microphone bridge between a NAO and a laptop. No third-party imports and no type annotations, so the same file loads on the robot's Python 2.7 and on Python 3.
 
 The [bridge install](https://github.com/icampus-wildau/nao-websocket-bridge#install) copies the package onto the robot next to `audio_bridge.py`. Laptops install it from PyPI. [nao-websocket-bridge-client](https://github.com/icampus-wildau/nao-websocket-bridge-client) is the async reader.
 

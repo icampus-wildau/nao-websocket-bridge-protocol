@@ -32,6 +32,8 @@ class ProtocolTests(unittest.TestCase):
             status,
             {"type": "status", "dropped_chunks": 4, "subscribed": True},
         )
+        with_version = json.loads(status_message(4, True, "v0.1.0"))
+        self.assertEqual(with_version["version"], "v0.1.0")
         self.assertEqual(message_type(status), "status")
         audio_format = json.loads(audio_format_message())
         self.assertEqual(validate_audio_format(audio_format)["sample_rate"], 16000)

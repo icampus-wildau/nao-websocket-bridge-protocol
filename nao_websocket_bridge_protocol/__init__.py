@@ -53,13 +53,20 @@ def audio_format_message():
     return json.dumps(audio_format_payload())
 
 
-def status_message(dropped_chunks, subscribed):
-    """JSON text frame sent to the laptop so it can see mic health."""
-    return json.dumps({
+def status_message(dropped_chunks, subscribed, version=None):
+    """JSON text frame sent to the laptop so it can see mic health.
+
+    ``version`` is the bridge release tag. It is omitted when empty so an
+    older caller still receives the two original fields.
+    """
+    payload = {
         "type": "status",
         "dropped_chunks": int(dropped_chunks),
         "subscribed": bool(subscribed),
-    })
+    }
+    if version:
+        payload["version"] = version
+    return json.dumps(payload)
 
 
 def validate_audio_format(audio_format):

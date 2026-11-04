@@ -8,7 +8,7 @@ version = "1.1.0"
 description = "Shared message contract for the NAO WebSocket bridge."
 readme = "README.md"
 requires-python = ">=2.7"
-license = "MIT"
+license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [{ name = "Valentin Schröter Bonk", email = "vasc9380@th-wildau.de" }]
 maintainers = [{ name = "Valentin Schröter Bonk", email = "vasc9380@th-wildau.de" }]
